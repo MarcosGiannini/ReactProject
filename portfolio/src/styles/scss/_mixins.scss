@@ -1,0 +1,7 @@
+@use './variables' as *;
+
+@mixin responsive ($breakpoint: $breakpoint-mobile) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}

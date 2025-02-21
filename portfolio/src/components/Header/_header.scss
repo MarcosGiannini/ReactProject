@@ -1,0 +1,23 @@
+@use '../../styles/scss/_mixins' as *;
+
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 40px;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background-color: rgb(255, 230, 255);  
+    border-bottom: rgb(220, 220, 220) 1px solid;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    @include responsive() {
+        font-size: 1.2em;
+    }
+}

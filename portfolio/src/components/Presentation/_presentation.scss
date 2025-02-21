@@ -1,0 +1,40 @@
+@use '../../styles/scss/_mixins' as *;
+
+.presentation {
+    display: flex;
+    align-items: center; // Mantiene todo alineado verticalmente
+    justify-content: center; // Más simetría
+    padding: 70px 80px; // Reducimos el padding vertical un poco
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px; // Espacio adecuado entre el texto y la imagen
+    
+}
+
+.presentation__text {
+    flex-grow: 1;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.6); // Transparencia ligera
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.presentation__text h2 {
+    font-size: 2.6rem; // Un poco más pequeño para equilibrar la imagen
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.presentation__text p {
+    font-size: 1.3rem; // También reducimos un poco el texto
+    line-height: 1.8;
+    text-align: left;
+}
+
+.presentation__img {
+    width: 160px; // Reducimos la imagen ligeramente
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);    flex-shrink: 0;
+}
